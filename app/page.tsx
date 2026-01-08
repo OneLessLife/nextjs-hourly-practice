@@ -1,10 +1,13 @@
-import Counter from './components/Counter'
+import Counter from "./components/Counter";
+import Header from "./components/header";
 
 export default function Home() {
   return (
     <main className="p-10">
+      <Header />
+
       <h1 className="text-3xl font-bold">
-        Next.js Hourly Practice 🚀
+        Next.js Hourly Practice with TypeScript
       </h1>
 
       <p className="mt-4">
@@ -13,5 +16,5 @@ export default function Home() {
 
       <Counter />
     </main>
-  )
+  );
 }
