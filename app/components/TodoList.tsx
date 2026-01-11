@@ -27,20 +27,23 @@ export default function TodoList() {
           onChange={(e) => setInput(e.target.value)}
           placeholder="Add a new task"
         />
-        <button className="px-4 py-2 bg-green-500 rounded hover:bg-green-600" onClick={addTodo}>
-          Add
-        </button>
+        <button
+  className="px-4 py-2 bg-green-500 rounded hover:bg-green-600 cursor-pointer"
+  onClick={addTodo}
+>
+  Add
+</button>
       </div>
       <ul className="list-disc list-inside">
         {todos.map((todo, index) => (
           <li key={index} className="flex justify-between items-center mb-1">
             <span>{todo}</span>
             <button
-              className="text-red-500 font-semibold"
-              onClick={() => removeTodo(index)}
-            >
-              X
-            </button>
+  className="text-red-500 font-semibold cursor-pointer"
+  onClick={() => removeTodo(index)}
+>
+  X
+</button>
           </li>
         ))}
       </ul>

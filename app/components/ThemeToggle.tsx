@@ -10,11 +10,14 @@ export default function ThemeToggle() {
       <h2 className="text-xl font-bold mb-3">Theme Toggle</h2>
       <p className="mb-4">Current Theme: {darkMode ? 'Dark' : 'Light'}</p>
       <button
-        className={`px-4 py-2 rounded font-semibold ${darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-300 hover:bg-gray-200'}`}
-        onClick={() => setDarkMode(!darkMode)}
-      >
-        Toggle Theme
-      </button>
+  className={`px-4 py-2 rounded font-semibold ${
+    darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-300 hover:bg-gray-200'
+  } cursor-pointer`}
+  onClick={() => setDarkMode(!darkMode)}
+>
+  Toggle Theme
+</button>
+
     </div>
   )
 }
