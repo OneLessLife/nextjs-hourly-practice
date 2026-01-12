@@ -5,17 +5,20 @@ import TodoList from "./components/TodoList";
 import MoviesRow from "./components/MoviesRow";
 import Tabs from "./components/Tabs";
 import UserIPList from './components/UserIPList'
+import FormValidation from "./components/FormValidation";
+
 
 
 export default function Home() {
   const tabs = [
-    { name: "Counter", content: <Counter /> },
-    { name: "Theme Toggle", content: <ThemeToggle /> },
-    { name: "To-Do List", content: <TodoList /> },
-    { name: "Movies Row", content: <MoviesRow /> },
-    { name: "User IPs", content: <UserIPList /> },
+  { name: "Counter", content: <Counter /> },
+  { name: "Theme Toggle", content: <ThemeToggle /> },
+  { name: "To-Do List", content: <TodoList /> },
+  { name: "Movies Row", content: <MoviesRow /> },
+  { name: "User IPs", content: <UserIPList /> },
+  { name: "Form Validation", content: <FormValidation /> }, // 👈 NEW
+];
 
-  ];
 
   // Δημιουργούμε fake IPs με τυχαία status
   const users = Array.from({ length: 20 }).map((_, i) => ({
