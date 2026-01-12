@@ -6,6 +6,7 @@ import MoviesRow from "./components/MoviesRow";
 import Tabs from "./components/Tabs";
 import UserIPList from './components/UserIPList'
 import FormValidation from "./components/FormValidation";
+import ExtremeAdvancedForm from "./components/ExtremeAdvancedForm";
 
 
 
@@ -16,11 +17,12 @@ export default function Home() {
   { name: "To-Do List", content: <TodoList /> },
   { name: "Movies Row", content: <MoviesRow /> },
   { name: "User IPs", content: <UserIPList /> },
-  { name: "Form Validation", content: <FormValidation /> }, // 👈 NEW
+  { name: "Form Validation", content: <FormValidation /> },
+  { name: "Extreme Form", content: <ExtremeAdvancedForm /> },
+
 ];
 
 
-  // Δημιουργούμε fake IPs με τυχαία status
   const users = Array.from({ length: 20 }).map((_, i) => ({
     ip: `192.168.0.${i + 1}`,
     online: Math.random() > 0.5, // online/offline
