@@ -13,6 +13,7 @@
     "@dnd-kit/sortable": "^10.0.0",
     "lucide-react": "^0.562.0",
     "next": "^16.1.1",
+    "openai": "^6.16.0",
     "react": "^19.2.3",
     "react-confetti": "^6.4.0",
     "react-dom": "^19.2.3",

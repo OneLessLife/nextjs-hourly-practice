@@ -10,6 +10,9 @@ import ExtremeAdvancedForm from "./components/ExtremeAdvancedForm";
 import NotificationCenter from "./components/NotificationCenter";
 import ConfettiButton from "./components/ConfettiButton";
 import ExtremeKanban from "./components/ExtremeKanban";
+import ExtremeLiveChat from "./components/ExtremeLiveChat";
+import ExtremeQAChat from "./components/ExtremeQAChat";
+import ExtremeAIChat from "./components/ExtremeAIChat";
 
 export default function Home() {
   const tabs = [
@@ -22,9 +25,12 @@ export default function Home() {
     { name: "Extreme Form", content: <ExtremeAdvancedForm /> },
     { name: "Celebrate", content: <ConfettiButton /> },
     { name: "Extreme Kanban", content: <ExtremeKanban /> },
+    { name: "Live Chat", content: <ExtremeLiveChat /> },
+    { name: "Q&A Chat", content: <ExtremeQAChat /> },
+    { name: "AI Q&A Chat", content: <ExtremeAIChat /> },
+
   ];
 
-  // Fake user list
   const users = Array.from({ length: 20 }).map((_, i) => ({
     ip: `192.168.0.${i + 1}`,
     online: Math.random() > 0.5,
