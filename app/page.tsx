@@ -9,6 +9,7 @@ import FormValidation from "./components/FormValidation";
 import ExtremeAdvancedForm from "./components/ExtremeAdvancedForm";
 import NotificationCenter from "./components/NotificationCenter";
 import ConfettiButton from "./components/ConfettiButton";
+import ExtremeKanban from "./components/ExtremeKanban";
 
 export default function Home() {
   const tabs = [
@@ -20,6 +21,7 @@ export default function Home() {
     { name: "Form Validation", content: <FormValidation /> },
     { name: "Extreme Form", content: <ExtremeAdvancedForm /> },
     { name: "Celebrate", content: <ConfettiButton /> },
+    { name: "Extreme Kanban", content: <ExtremeKanban /> },
   ];
 
   // Fake user list
