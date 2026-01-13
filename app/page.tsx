@@ -13,6 +13,7 @@ import ExtremeKanban from "./components/ExtremeKanban";
 import ExtremeLiveChat from "./components/ExtremeLiveChat";
 import ExtremeQAChat from "./components/ExtremeQAChat";
 import ExtremeAIChat from "./components/ExtremeAIChat";
+import AIJobInterview from "./components/AIJobInterview";
 
 export default function Home() {
   const tabs = [
@@ -28,6 +29,7 @@ export default function Home() {
     { name: "Live Chat", content: <ExtremeLiveChat /> },
     { name: "Q&A Chat", content: <ExtremeQAChat /> },
     { name: "AI Q&A Chat", content: <ExtremeAIChat /> },
+    { name: "AI Job Interview", content: <AIJobInterview /> },
 
   ];
 
