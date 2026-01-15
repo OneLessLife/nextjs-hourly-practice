@@ -14,6 +14,7 @@ import ExtremeLiveChat from "./components/ExtremeLiveChat";
 import ExtremeQAChat from "./components/ExtremeQAChat";
 import ExtremeAIChat from "./components/ExtremeAIChat";
 import AIJobInterview from "./components/AIJobInterview";
+import MotivationCard from "./components/MotivationCard";
 
 export default function Home() {
   const tabs = [
@@ -30,7 +31,7 @@ export default function Home() {
     { name: "Q&A Chat", content: <ExtremeQAChat /> },
     { name: "AI Q&A Chat", content: <ExtremeAIChat /> },
     { name: "AI Job Interview", content: <AIJobInterview /> },
-
+    {name: "Motivation",content: <MotivationCard title="Stay Strong 💪"message="Every workout makes you better than yesterday." />},
   ];
 
   const users = Array.from({ length: 20 }).map((_, i) => ({
@@ -40,8 +41,6 @@ export default function Home() {
 
   return (
     <main className="p-10 bg-black min-h-screen text-white max-w-7xl mx-auto">
-      
-      {/* Header with Notifications */}
       <div className="flex justify-between items-center">
         <Header />
         <NotificationCenter />
@@ -55,10 +54,8 @@ export default function Home() {
         Interactive client components in a professional layout.
       </p>
 
-      {/* Main Tabs */}
       <Tabs tabs={tabs} />
 
-      {/* Example Large List */}
       <section className="mt-10">
         <h2 className="text-2xl font-semibold mb-4">User IP List</h2>
 

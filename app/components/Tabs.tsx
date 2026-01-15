@@ -16,25 +16,25 @@ export default function Tabs({ tabs }: TabsProps) {
 
   return (
     <div className="mt-10">
-      <div className="flex gap-2 border-b border-gray-500">
-        {tabs.map((tab, index) => (
-          <button
-  key={index}
-  className={`px-4 py-2 rounded-t font-semibold ${
-    activeTab === index
-      ? 'bg-gray-800 text-white'
-      : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-  } cursor-pointer`}
-  onClick={() => setActiveTab(index)}
->
-  {tab.name}
-</button>
+  <div className="flex gap-2 border-b border-gray-500 overflow-x-auto whitespace-nowrap px-2 scroll-smooth">
+    {tabs.map((tab, index) => (
+      <button
+        key={index}
+        className={`px-4 py-2 rounded-t font-semibold ${
+          activeTab === index
+            ? 'bg-gray-800 text-white'
+            : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+        } cursor-pointer`}
+        onClick={() => setActiveTab(index)}
+      >
+        {tab.name}
+      </button>
+    ))}
+  </div>
+  <div className="p-5 bg-gray-900 text-white rounded-b-lg">
+    {tabs[activeTab].content}
+  </div>
+</div>
 
-        ))}
-      </div>
-      <div className="p-5 bg-gray-900 text-white rounded-b-lg">
-        {tabs[activeTab].content}
-      </div>
-    </div>
   )
 }
