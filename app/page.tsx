@@ -15,6 +15,8 @@ import ExtremeQAChat from "./components/ExtremeQAChat";
 import ExtremeAIChat from "./components/ExtremeAIChat";
 import AIJobInterview from "./components/AIJobInterview";
 import MotivationCard from "./components/MotivationCard";
+import SmartSearch from "./components/SmartSearch";
+
 
 export default function Home() {
   const tabs = [
@@ -32,6 +34,8 @@ export default function Home() {
     { name: "AI Q&A Chat", content: <ExtremeAIChat /> },
     { name: "AI Job Interview", content: <AIJobInterview /> },
     {name: "Motivation",content: <MotivationCard title="Stay Strong 💪"message="Every workout makes you better than yesterday." />},
+    { name: "Smart Search", content: <SmartSearch /> },
+
   ];
 
   const users = Array.from({ length: 20 }).map((_, i) => ({
