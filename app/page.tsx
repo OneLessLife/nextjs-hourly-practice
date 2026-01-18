@@ -16,6 +16,7 @@ import ExtremeAIChat from "./components/ExtremeAIChat";
 import AIJobInterview from "./components/AIJobInterview";
 import MotivationCard from "./components/MotivationCard";
 import SmartSearch from "./components/SmartSearch";
+import ActivityTimeline from "./components/ActivityTimeline";
 
 
 export default function Home() {
@@ -35,6 +36,7 @@ export default function Home() {
     { name: "AI Job Interview", content: <AIJobInterview /> },
     {name: "Motivation",content: <MotivationCard title="Stay Strong 💪"message="Every workout makes you better than yesterday." />},
     { name: "Smart Search", content: <SmartSearch /> },
+    { name: "Activity Log", content: <ActivityTimeline /> },
 
   ];
 
