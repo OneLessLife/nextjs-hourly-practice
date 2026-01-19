@@ -17,6 +17,9 @@ import AIJobInterview from "./components/AIJobInterview";
 import MotivationCard from "./components/MotivationCard";
 import SmartSearch from "./components/SmartSearch";
 import ActivityTimeline from "./components/ActivityTimeline";
+import EnterpriseDataTable from "./components/EnterpriseDataTable";
+import ProductivityDashboard from "./components/ProductivityDashboard";
+import SmartFinanceSimulator from "./components/SmartFinanceSimulator";
 
 
 export default function Home() {
@@ -37,6 +40,9 @@ export default function Home() {
     {name: "Motivation",content: <MotivationCard title="Stay Strong 💪"message="Every workout makes you better than yesterday." />},
     { name: "Smart Search", content: <SmartSearch /> },
     { name: "Activity Log", content: <ActivityTimeline /> },
+    { name: "Data Table", content: <EnterpriseDataTable /> },
+    { name: "Productivity Dashboard", content: <ProductivityDashboard /> },
+    { name: "Finance", content: <SmartFinanceSimulator /> },
 
   ];
 
