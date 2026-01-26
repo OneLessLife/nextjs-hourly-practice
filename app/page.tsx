@@ -21,7 +21,8 @@ import EnterpriseDataTable from "./components/EnterpriseDataTable";
 import ProductivityDashboard from "./components/ProductivityDashboard";
 import SmartFinanceSimulator from "./components/SmartFinanceSimulator";
 import HabitEvolutionSimulator from "./components/HabitEvolutionSimulator";
-import ApiRequestBuilder from "@/components/ApiRequestBuilder"
+import ApiRequestBuilder from "./components/ApiRequestBuilder"
+import ExtremeSystemMonitor from "./components/ExtremeSystemMonitor";
 
 
 export default function Home() {
@@ -47,6 +48,7 @@ export default function Home() {
     { name: "Finance", content: <SmartFinanceSimulator /> },
     { name: "Habit Evolution", content: <HabitEvolutionSimulator /> },
     { name: "Api Builder", content: <ApiRequestBuilder /> },
+    { name: "System Monitor", content: <ExtremeSystemMonitor /> },
 
   ];
 
