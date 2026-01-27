@@ -23,6 +23,7 @@ import SmartFinanceSimulator from "./components/SmartFinanceSimulator";
 import HabitEvolutionSimulator from "./components/HabitEvolutionSimulator";
 import ApiRequestBuilder from "./components/ApiRequestBuilder"
 import ExtremeSystemMonitor from "./components/ExtremeSystemMonitor";
+import CommandPalette from "./components/CommandPalette";
 
 
 export default function Home() {
@@ -49,6 +50,7 @@ export default function Home() {
     { name: "Habit Evolution", content: <HabitEvolutionSimulator /> },
     { name: "Api Builder", content: <ApiRequestBuilder /> },
     { name: "System Monitor", content: <ExtremeSystemMonitor /> },
+    { name: "Command Palette", content: <CommandPalette /> },
 
   ];
 
