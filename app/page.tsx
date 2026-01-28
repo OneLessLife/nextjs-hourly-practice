@@ -24,6 +24,7 @@ import HabitEvolutionSimulator from "./components/HabitEvolutionSimulator";
 import ApiRequestBuilder from "./components/ApiRequestBuilder"
 import ExtremeSystemMonitor from "./components/ExtremeSystemMonitor";
 import CommandPalette from "./components/CommandPalette";
+import OfflineNotesVault from "./components/OfflineNotesVault";
 
 
 export default function Home() {
@@ -51,7 +52,7 @@ export default function Home() {
     { name: "Api Builder", content: <ApiRequestBuilder /> },
     { name: "System Monitor", content: <ExtremeSystemMonitor /> },
     { name: "Command Palette", content: <CommandPalette /> },
-
+    { name: "Offline Notes Vault", content: <OfflineNotesVault /> },
   ];
 
   const users = Array.from({ length: 20 }).map((_, i) => ({
