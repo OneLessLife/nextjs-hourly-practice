@@ -53,6 +53,7 @@ export default function Home() {
     { name: "System Monitor", content: <ExtremeSystemMonitor /> },
     { name: "Command Palette", content: <CommandPalette /> },
     { name: "Offline Notes Vault", content: <OfflineNotesVault /> },
+    
   ];
 
   const users = Array.from({ length: 20 }).map((_, i) => ({
