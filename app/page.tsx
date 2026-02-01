@@ -25,6 +25,7 @@ import ApiRequestBuilder from "./components/ApiRequestBuilder"
 import ExtremeSystemMonitor from "./components/ExtremeSystemMonitor";
 import CommandPalette from "./components/CommandPalette";
 import OfflineNotesVault from "./components/OfflineNotesVault";
+import FeatureFlagConsole from "./components/FeatureFlagConsole";
 
 
 export default function Home() {
@@ -53,7 +54,7 @@ export default function Home() {
     { name: "System Monitor", content: <ExtremeSystemMonitor /> },
     { name: "Command Palette", content: <CommandPalette /> },
     { name: "Offline Notes Vault", content: <OfflineNotesVault /> },
-    
+    { name: "Feature Flags", content: <FeatureFlagConsole /> },
   ];
 
   const users = Array.from({ length: 20 }).map((_, i) => ({
