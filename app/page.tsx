@@ -23,9 +23,9 @@ import SmartFinanceSimulator from "./components/SmartFinanceSimulator";
 import HabitEvolutionSimulator from "./components/HabitEvolutionSimulator";
 import ApiRequestBuilder from "./components/ApiRequestBuilder"
 import ExtremeSystemMonitor from "./components/ExtremeSystemMonitor";
-import CommandPalette from "./components/CommandPalette";
 import OfflineNotesVault from "./components/OfflineNotesVault";
 import FeatureFlagConsole from "./components/FeatureFlagConsole";
+import TimeTravelEditor from "./components/TimeTravelEditor";
 
 
 export default function Home() {
@@ -52,9 +52,9 @@ export default function Home() {
     { name: "Habit Evolution", content: <HabitEvolutionSimulator /> },
     { name: "Api Builder", content: <ApiRequestBuilder /> },
     { name: "System Monitor", content: <ExtremeSystemMonitor /> },
-    { name: "Command Palette", content: <CommandPalette /> },
     { name: "Offline Notes Vault", content: <OfflineNotesVault /> },
     { name: "Feature Flags", content: <FeatureFlagConsole /> },
+    { name: "Time Travel Editor", content: <TimeTravelEditor /> },
   ];
 
   const users = Array.from({ length: 20 }).map((_, i) => ({
