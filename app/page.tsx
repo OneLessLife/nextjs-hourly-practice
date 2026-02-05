@@ -26,6 +26,8 @@ import ExtremeSystemMonitor from "./components/ExtremeSystemMonitor";
 import OfflineNotesVault from "./components/OfflineNotesVault";
 import FeatureFlagConsole from "./components/FeatureFlagConsole";
 import TimeTravelEditor from "./components/TimeTravelEditor";
+import SmartRateLimiter from "./components/SmartRateLimiter";
+import FeatureFlagPlayground from "./components/FeatureFlagPlayground";
 
 
 export default function Home() {
@@ -55,6 +57,8 @@ export default function Home() {
     { name: "Offline Notes Vault", content: <OfflineNotesVault /> },
     { name: "Feature Flags", content: <FeatureFlagConsole /> },
     { name: "Time Travel Editor", content: <TimeTravelEditor /> },
+    { name: "Rate Limiter", content: <SmartRateLimiter /> },
+    { name: "Feature Flag Playground", content: <FeatureFlagPlayground /> },
   ];
 
   const users = Array.from({ length: 20 }).map((_, i) => ({
